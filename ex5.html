@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        width: 90%;
+        margin: 0 auto;
+        border: 4px solid #333;
+  
+      }
+      .wrap div {
+        height: 100px;
+        display: inline-block;
+      }
+      .wrap div:first-child {
+        background: #f74141;
+      }
+      .wrap div:nth-child(2) {
+        background: #6a85ff;
+      }
+      .wrap div:nth-child(3) {
+        background: #ff9d4d;
+      }
+      .wrap div:nth-child(4) {
+        background: #6aff72;
+      }
+      .wrap div:last-child {
+        background: #ff50b6;
+      }
+    @media screen and (min-width:320px) {
+.wrap div {
+  width: 100%;
+  
+}
+.wrap div:last-child {
+  width: 100%;
+}
+      }
+
+
+     @media screen and (min-width:768px) {
+      .wrap div {
+        width: 50%;
+      }
+      .warp div:last-child{
+        width: 100%;
+      }
+     }
+     @media screen and (min-width:1204px) {
+      .wrap div {
+        width: 20%;
+      }
+      .wrap div:last-child{
+        width: 20%;
+      }
+     }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div></div><div></div><div></div><div></div><div></div>
+     
+    </div>
+  </body>
+</html>
